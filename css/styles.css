@@ -20,7 +20,13 @@ background: linear-gradient(to right, #f642db 5%, #0f4076);
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
-
+.logo img{
+    width: 40px;
+    margin: 0px 10px 5px;
+    align-items: center;
+    align-content: center;
+    
+}
                                                 /* fonts */
 
 body {
@@ -51,6 +57,10 @@ body{
     background-color: #fff;
     background-size: cover;
     background-position: center;
+    background-image: url("../images/pictures/background-about-us.jpg");
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 li{
     list-style: none;
@@ -129,7 +139,7 @@ header{
     top: 60px;
     width: 300px;
     height: 0px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -182,17 +192,12 @@ header{
 }
 
 .about-page{
-    position: relative;
-    background-image: url("../images/pictures/background-about-us.jpg");
-    height: 100vh;
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size:cover;
+    
 }
 
 .about-us-container {
  	width: 100%;
- 	min-height: 78vh;
+ 	min-height: 45vh;
  	padding: 0px;
 	overflow: hidden;
   	display: flex;
@@ -252,7 +257,7 @@ header{
 	z-index: 100;
 }
 /* NOTE: color palette Mingle More branding: 
-dark blue: #0f5f96
+dark blue: rgba(15,95,150,1.00)
 light blue: #2bd0f9
 hotpink: #f642db
 purple: #a79bf0
@@ -263,7 +268,12 @@ background: linear-gradient(135deg, #2bd0f9 5%, #0f4076);
 background: linear-gradient(to right, #f642db 5%, #0f4076);
 */
                                           /* about us - Brand values */
-
+.class-info {
+    background-color: rgba(255,255,255,0.6);
+}
+.class-info h4{
+    text-align: center;
+}
 .heading{
   text-align: center;
   background-clip: text;
@@ -271,7 +281,6 @@ background: linear-gradient(to right, #f642db 5%, #0f4076);
   text-transform: uppercase;
   padding: 1rem;
 }
-
 .features .box-container{
   display: flex;
   padding: 3rem;
@@ -351,6 +360,94 @@ background: linear-gradient(to right, #f642db 5%, #0f4076);
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent; 
+}
+
+
+
+
+                                            /* Product page */
+.product-page{
+
+}
+.product-page .sub-heading{
+    text-align: center;
+    font-color: #a79bf0;
+}
+.product-page .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 80px 20px 80px;
+    gap: 1.5rem;
+    align-items: center;
+    align-content: center; 
+}
+.product-page .row .product-image{
+    flex: 1 1 17rem;
+    background-color: floralwhite;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px #000, 0px 0px 15px #959595;
+}
+.product-page .row .product-image img{
+    max-width: 200px;
+    align-items: center;
+    align-content: center;
+}
+.product-page .row .product-content{
+    flex: 1 1 20rem;
+}
+.product-page .row .product-content h3{
+    color: #353535;
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+.product-page .row .product-content p{
+    color: #454545;
+    font-size: 17px;
+    padding: .5rem 0;
+    line-height: 2;
+    max-width: 900px;
+    
+}
+.product-page .row .product-content .icons-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top:0.5rem;
+}
+.product-page .row .product-content .icons-container .product-icons{
+    background:#EEE;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 10rem;
+    padding: 0.2rem 1.5rem; 
+}
+.product-page .row .product-content .icons-container .dropdown{
+    padding: 0.2rem 1.5rem; 
+    background:#EEE;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 10rem;
+}
+.product-page .row .product-content .add-to-shopping-card {
+    padding-top: 20px;
+}
+.product-page .row .product-content .add-to-shopping-card .shopping-card-button{
+    padding: 0.8rem 1.5rem;
+    font-size: 18px;
+}
+
+.product-page .row .product-content .icons-container .product-icons i{
+    font-size: 2.5rem;
+    
 }
 
 
