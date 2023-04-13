@@ -1,25 +1,387 @@
-/* Importing a Google Font */
+/* NOTE: color palette Mingle More branding: 
+dark blue: #0f5f96
+light blue: #2bd0f9
+hotpink: #f642db
+purple: #a79bf0
+grey: #c8c8c8
+beige: #e7dfdc
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+background: linear-gradient(135deg, #2bd0f9 5%, #0f4076);
+background: linear-gradient(to right, #f642db 5%, #0f4076);
+*/
 
-/* Changing the main font and background colour */
+
+
+                                                /* Main */
+*{
+    padding: 0;
+    Margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+                                                /* fonts */
 
 body {
-	font-family: Raleway, sans-serif;
 	background-color: #fffcf8;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: #353535;
+}
+span{
+    background-image: linear-gradient(to left, #0f5f96, #f642db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;   
 }
 
-/* Changing the background colour for the header */
 
-header {
-	background-color: #000060;
+
+                                              /* navigation bar */
+
+.nav-link:hover{
+   	color: #2bd0f9;
+	transition: .4s; 
+}
+body{
+    height: 100vh;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #353535;
+    font-size: 1rem; 
+}
+a:hover{
+    color: #2bd0f9;
+    transition: .4s;
+}
+.chosen-tab a{
+    font-color: #0f4076;
 }
 
-/* Changing the background color for the navigation bar */
-
-.navbar {
-	background-color: #fff0e0;
+/* header */
+header{
+    position: relative;
+    padding: 0 2rem;
 }
+.navbar2{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar2 .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar2 .links{
+    display: flex;
+    gap: 3rem;
+}
+.navbar2 .toggle-button{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.shopping-card-button{
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-size: 200% auto;
+    transition: 0.9s;
+}
+.shopping-card-button:hover {
+    scale: 1.06;
+    background-position: right center;
+    color: #fff;
+
+}
+.shopping-card-button {
+  background-image: linear-gradient(135deg, #0f5f96 0%, #2bd0f9 51%, #0f5f96 100%);
+}
+
+
+
+                                            /* dropdown menu */ 
+
+.dropdown-menu2 {
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu2.open{
+    height: 240px;
+}
+.dropdown-menu2 li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-menu2 .shopping-card-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+                                            /* landing page */
+.landing-page {
+    position: relative;
+    background-image: url("../images/pictures/homescreen-image.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow: hidden;
+    background-color: #c8c8c8;
+}
+.landing-text-left{
+    padding: 120px 120px 30px 120px;
+    position: relative;
+    text-align: left;
+}
+.landing-text-right{
+    padding: 30px 120px 0px 120px;
+    position: relative;
+    text-align: right;
+}
+
+
+                                                /* about us page */
+                                       /* about us - Faces of MingleMore */
+.about-page .container .heading{
+    padding: 130px 0px -130px 0px;
+}
+
+.about-page{
+    position: relative;
+    background-image: url("../images/pictures/background-about-us.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.about-us-container {
+ 	width: 100%;
+ 	min-height: 78vh;
+ 	padding: 0px;
+	overflow: hidden;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+.members-team{
+}
+.members-team h1{
+	margin-top: 100px;
+	text-align: center;
+	font-color: floralwhite;
+}
+.about-us-container{
+}
+
+.about-us-card .about-us-image{
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+	padding: 3px;
+	background: #0f5f96;
+}
+
+.about-us-card .about-us-image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid #FFFFFF;
+}
+.about-us-card{
+	position: relative;
+	background: #FFFFFF;
+	border-radius: 20px;
+	width: 270px;
+	height: 290px;
+	margin: 20px;
+	box-shadow: 0px 0px 0px #000, 0px 0px 15px #555555;
+}
+.about-us-card::before{
+	content: "";
+	position: absolute;
+	height: 50%;
+	width: 100%;
+	background: #0f5f96;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.about-us-card .about-us-card-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	text-align: center;
+	position: relative;
+	z-index: 100;
+}
+/* NOTE: color palette Mingle More branding: 
+dark blue: #0f5f96
+light blue: #2bd0f9
+hotpink: #f642db
+purple: #a79bf0
+grey: #c8c8c8
+beige: #e7dfdc
+
+background: linear-gradient(135deg, #2bd0f9 5%, #0f4076);
+background: linear-gradient(to right, #f642db 5%, #0f4076);
+*/
+                                          /* about us - Brand values */
+
+.heading{
+  text-align: center;
+  background-clip: text;
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.features .box-container{
+  display: flex;
+  padding: 3rem;
+  align-items: "";
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+.features .box-container .box{
+  margin: 1rem;
+  border-radius: .5rem;
+  text-align: center;
+  background: #E0DBF9;
+  padding: 1rem;
+  flex: 1 1 30rem;
+  cursor: pointer;
+}
+
+
+
+.features .box-container .box i{
+  color: #353535;
+  font-size: 6rem;
+  padding: 1rem;
+}
+
+
+
+.features .box-container .box h3{
+  color: #353535;
+  font-size: 2rem;
+}
+
+
+
+.features .box-container .box p{
+  color: #555555;
+  font-size: 15px;
+  padding: .7rem;
+  text-align: justify;
+}
+
+
+
+.features .box-container .box:hover{
+    background-color: #F3F3F3;
+}
+
+.features .box-container .box:hover > *{
+    background-image: linear-gradient(to left, #0f5f96, #f642db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;   
+}
+
+
+
+
+
+                                              /* corperate page */
+.corperate-page{
+    background-image: url("../images/pictures/homescreen-image-faded.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: top-center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #c8c8c8;
+}
+.corperate-page h2{
+    background-image: linear-gradient(135deg, #2bd0f9, #093667 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent; 
+}
+
+
+
+                                                /* responsive */
+@media(max-width:992px){
+    .navbar2 .links,
+    .navbar2 .shopping-card-button{
+        display: none;
+    }
+    .navbar2 .toggle-button{
+        display: block;
+    }
+    .dropdown-menu2{
+        display: block;
+    }
+}
+@media(max-width: 576px) {
+    .dropdown-menu2{
+        left: 2rem;
+        width: unset;
+    }
+    .landing-text-left{
+        text-align: center;
+    }
+    .landing-text-right{
+        text-align: center;
+    }
+}
+
+
 
 /* Effect on social media buttons */
 
