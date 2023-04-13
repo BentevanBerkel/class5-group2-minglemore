@@ -267,6 +267,7 @@ beige: #e7dfdc
 background: linear-gradient(135deg, #2bd0f9 5%, #0f4076);
 background: linear-gradient(to right, #f642db 5%, #0f4076);
 */
+
                                           /* about us - Brand values */
 .class-info {
     background-color: rgba(255,255,255,0.6);
@@ -344,16 +345,7 @@ background: linear-gradient(to right, #f642db 5%, #0f4076);
 
 
                                               /* corperate page */
-.corperate-page{
-    background-image: url("../images/pictures/homescreen-image-faded.jpg");
-    height: 100vh;
-    width: 100%;
-    background-position: top-center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #c8c8c8;
-}
+
 .corperate-page h2{
     background-image: linear-gradient(135deg, #2bd0f9, #093667 40%);
     -webkit-background-clip: text;
@@ -366,9 +358,7 @@ background: linear-gradient(to right, #f642db 5%, #0f4076);
 
 
                                             /* Product page */
-.product-page{
 
-}
 .product-page .sub-heading{
     text-align: center;
     font-color: #a79bf0;
@@ -452,6 +442,21 @@ background: linear-gradient(to right, #f642db 5%, #0f4076);
 
 
 
+
+
+                                            /* contact page */
+.contact-page{
+    background-image: url("../images/pictures/homescreen-image-faded.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: top-center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #c8c8c8;
+}
+
+
                                                 /* responsive */
 @media(max-width:992px){
     .navbar2 .links,
@@ -489,6 +494,17 @@ footer a:hover {
 /* Corporate navbar */
 
 #navbar-corporate a.active {
-	color: #800000;
+	color: #853838;
 	font-weight: bold;
+}
+
+ul.nav-pills {
+    top: 100px;
+    left: 20px;
+    position: fixed;
+}
+div.col-8 div {
+}
+.corperate-page{
+    top: 100px;
 }
