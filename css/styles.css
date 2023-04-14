@@ -455,7 +455,6 @@ background: linear-gradient(to right, #f642db 5%, #0f4076);
 
 
 
-
                                             /* contact page */
 .contact-page{
     background-image: url("../images/pictures/homescreen-image-faded.jpg");
@@ -467,6 +466,21 @@ background: linear-gradient(to right, #f642db 5%, #0f4076);
     background-size: cover;
     background-color: #c8c8c8;
 }
+.contact{
+    max-width: 600px;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact h2{
+    text-align: center;
+}
+
+
 
 
                                                 /* responsive */
