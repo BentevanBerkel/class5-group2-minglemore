@@ -360,7 +360,9 @@ background: linear-gradient(to right, #f642db 5%, #0f4076);
     border: rgba(81,81,81,1.00);
 }
 
-
+.img-thumbnail{
+    max-width: 400px;
+}
                                             /* Product page */
 
 .product-page .sub-heading{
